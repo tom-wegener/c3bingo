@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ce3bingo/static/css/main.d1b05096.chunk.css",
-    "main.js": "/ce3bingo/static/js/main.a539d372.chunk.js",
-    "main.js.map": "/ce3bingo/static/js/main.a539d372.chunk.js.map",
-    "runtime-main.js": "/ce3bingo/static/js/runtime-main.51b91271.js",
-    "runtime-main.js.map": "/ce3bingo/static/js/runtime-main.51b91271.js.map",
-    "static/js/2.7111b3cc.chunk.js": "/ce3bingo/static/js/2.7111b3cc.chunk.js",
-    "static/js/2.7111b3cc.chunk.js.map": "/ce3bingo/static/js/2.7111b3cc.chunk.js.map",
-    "index.html": "/ce3bingo/index.html",
-    "precache-manifest.6e9c65b0eaf9bf3c8e60efb41bec88f1.js": "/ce3bingo/precache-manifest.6e9c65b0eaf9bf3c8e60efb41bec88f1.js",
-    "service-worker.js": "/ce3bingo/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/ce3bingo/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.7111b3cc.chunk.js.LICENSE": "/ce3bingo/static/js/2.7111b3cc.chunk.js.LICENSE",
-    "static/media/logo.svg": "/ce3bingo/static/media/logo.5d5d9eef.svg"
+    "main.css": "/c3bingo/static/css/main.d1b05096.chunk.css",
+    "main.js": "/c3bingo/static/js/main.481615eb.chunk.js",
+    "main.js.map": "/c3bingo/static/js/main.481615eb.chunk.js.map",
+    "runtime-main.js": "/c3bingo/static/js/runtime-main.0b1a7827.js",
+    "runtime-main.js.map": "/c3bingo/static/js/runtime-main.0b1a7827.js.map",
+    "static/js/2.7111b3cc.chunk.js": "/c3bingo/static/js/2.7111b3cc.chunk.js",
+    "static/js/2.7111b3cc.chunk.js.map": "/c3bingo/static/js/2.7111b3cc.chunk.js.map",
+    "index.html": "/c3bingo/index.html",
+    "precache-manifest.c45d20f40a1b86753d57d344d7bf5a12.js": "/c3bingo/precache-manifest.c45d20f40a1b86753d57d344d7bf5a12.js",
+    "service-worker.js": "/c3bingo/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/c3bingo/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.7111b3cc.chunk.js.LICENSE": "/c3bingo/static/js/2.7111b3cc.chunk.js.LICENSE",
+    "static/media/logo.svg": "/c3bingo/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.51b91271.js",
+    "static/js/runtime-main.0b1a7827.js",
     "static/js/2.7111b3cc.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.a539d372.chunk.js"
+    "static/js/main.481615eb.chunk.js"
   ]
 }
