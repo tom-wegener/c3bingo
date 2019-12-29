@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/c3bingo/static/css/main.d1b05096.chunk.css",
-    "main.js": "/c3bingo/static/js/main.481615eb.chunk.js",
-    "main.js.map": "/c3bingo/static/js/main.481615eb.chunk.js.map",
+    "main.js": "/c3bingo/static/js/main.9e5c111c.chunk.js",
+    "main.js.map": "/c3bingo/static/js/main.9e5c111c.chunk.js.map",
     "runtime-main.js": "/c3bingo/static/js/runtime-main.0b1a7827.js",
     "runtime-main.js.map": "/c3bingo/static/js/runtime-main.0b1a7827.js.map",
     "static/js/2.7111b3cc.chunk.js": "/c3bingo/static/js/2.7111b3cc.chunk.js",
     "static/js/2.7111b3cc.chunk.js.map": "/c3bingo/static/js/2.7111b3cc.chunk.js.map",
     "index.html": "/c3bingo/index.html",
-    "precache-manifest.2bf9c9409ee470ec00b86b8236c4b01d.js": "/c3bingo/precache-manifest.2bf9c9409ee470ec00b86b8236c4b01d.js",
+    "precache-manifest.c49aa36d1ef5c7fc58f532db6e5b289b.js": "/c3bingo/precache-manifest.c49aa36d1ef5c7fc58f532db6e5b289b.js",
     "service-worker.js": "/c3bingo/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/c3bingo/static/css/main.d1b05096.chunk.css.map",
     "static/js/2.7111b3cc.chunk.js.LICENSE": "/c3bingo/static/js/2.7111b3cc.chunk.js.LICENSE",
-    "static/media/logo.svg": "/c3bingo/static/media/logo.5d5d9eef.svg"
+    "static/media/logo.svg": "/c3bingo/static/media/logo.041b9551.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0b1a7827.js",
     "static/js/2.7111b3cc.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.481615eb.chunk.js"
+    "static/js/main.9e5c111c.chunk.js"
   ]
 }
