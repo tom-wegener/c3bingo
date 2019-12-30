@@ -2,59 +2,85 @@
 
 import * as React from "react";
 import "./bingo.css";
-//import bingpot from "./bingpot.json";
+import bingpot from "./bingpot.json";
 
-class Square extends React.Component {
+type BoxState = {};
+type BoxProps = { value: string };
+
+class Box extends React.Component<BoxProps, BoxState> {
   render() {
-    return <button className="square">{/* TODO */}</button>;
+    return (
+      <button
+        className="box"
+        onClick={function() {
+          alert("click");
+        }}
+      >
+        {this.props.value}
+      </button>
+    );
   }
 }
 
-class Board extends React.Component {
-  renderSquare(i: number) {
-    return <Square />;
+class Board extends React.Component<{}, { value: string }> {
+  //var allNums: number[];
+
+  getWord(allNums: number[]): string {
+    let bingpotArr = bingpot["bingpots"];
+    let ranNum = getRandomInt(bingpotArr.length);
+
+    if (allNums.includes(ranNum)) {
+      return this.getWord(allNums);
+    } else {
+      allNums.push(ranNum);
+      return bingpotArr[ranNum];
+    }
+  }
+
+  makeBox(allNums: number[]) {
+    var word = this.getWord(allNums);
+    return <Box value={word} />;
   }
 
   render() {
-    const status = "Next player: X";
+    var allNums: number[] = [200];
 
     return (
       <div>
-        <div className="status">{status}</div>
         <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
         </div>
         <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
         </div>
         <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
         </div>
         <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
         </div>
         <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
+          {this.makeBox(allNums)}
         </div>
       </div>
     );
@@ -77,37 +103,10 @@ class GetBingo extends React.Component {
   }
 }
 
-/*function GetBingo() {
-  let bingpotArr = bingpot["bingpots"];
-  let ranNum = getRandomInt(bingpotArr.length);
-  return (
-    <div className="Board">
-      <div className="board-row">
-        {this.renderSquare(bingpotArr)}
-        {this.renderSquare(1)}
-        {this.renderSquare(2)}
-      </div>
-      <div className="board-row">
-        {this.renderSquare(3)}
-        {this.renderSquare(4)}
-        {this.renderSquare(5)}
-      </div>
-      <div className="board-row">
-        {this.renderSquare(6)}
-        {this.renderSquare(7)}
-        {this.renderSquare(8)}
-      </div>
-    </div>
-    /*    <div className="Bingo">
-      <div className="field1">You got {bingpotArr[ranNum]}</div>
-    </div>
-  );
-}
-
 function getRandomInt(max: number) {
   let min = Math.ceil(0);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-}*/
+}
 
 export default GetBingo;

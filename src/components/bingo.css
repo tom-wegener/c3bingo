@@ -8,22 +8,22 @@
   margin-bottom: 10px;
 }
 
-.square {
+.box {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 25px;
+  height: 120px;
   margin-right: -1px;
   margin-top: -1px;
-  padding: 0;
+  padding: 1;
   text-align: center;
-  width: 34px;
+  width: 120px;
 }
 
-.square:focus {
+.box:focus {
   outline: none;
 }
 
@@ -36,6 +36,7 @@
   margin-right: auto;
   display: flex;
   flex-direction: row;
+  width: 650px;
 }
 
 .game-info {
